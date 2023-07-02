@@ -1,3 +1,17 @@
-.menu {
-	padding: 5rem 0;
+.jobsCenter {
+	width: 80vw;
+	max-width: var(--max-width);
+	margin: 5rem auto;
+}
+
+.loading {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+
+	border: 5px solid var(--grey-400);
+	border-top-color: var(--primary-500);
+	border-radius: 50%;
+
+	animation: spinner 0.6s linear infinite;
 }

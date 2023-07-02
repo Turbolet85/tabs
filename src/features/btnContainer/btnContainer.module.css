@@ -1,0 +1,57 @@
+.btnContainer {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 0.5rem;
+	justify-content: center;
+
+	margin-bottom: 4rem;
+}
+
+.jobBtn {
+	cursor: pointer;
+
+	letter-spacing: var(--letterSpacing);
+
+	background: transparent;
+	border-color: transparent;
+
+	transition: var(--transition);
+}
+
+.jobBtn:hover {
+	color: var(--primary-500);
+	box-shadow: 0 2px var(--primary-500);
+}
+
+.activeBtn {
+	color: var(--primary-500);
+	background: none;
+	border: none;
+	box-shadow: 0 2px var(--primary-500);
+}
+
+@media screen and (width <= 992px) {
+	.jobsCenter {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		column-gap: 4rem;
+		width: 90vw;
+	}
+
+	.btnContainer {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.jobBtn {
+		margin-bottom: 1rem;
+	}
+
+	.jobBtn:hover {
+		box-shadow: -2px 0 var(--primary-500);
+	}
+
+	.activeBtn {
+		box-shadow: -2px 0 var(--primary-500);
+	}
+}
